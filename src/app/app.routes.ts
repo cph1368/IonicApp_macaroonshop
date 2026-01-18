@@ -1,15 +1,7 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-//  {
-  //  path: '',
-    //loadChildren: () => import('./tabs/tabs.routes').then((m) => m.routes),
-  //},
-  {
-    path: '',
-    redirectTo: 'tabs',
-    pathMatch: 'full',
-  },
+
   {
     path: 'settings',
     loadComponent: () => import('./settings/settings.page').then( m => m.SettingsPage)
@@ -21,7 +13,26 @@ export const routes: Routes = [
   },
   {
     path: 'tabs',
-    loadComponent: () => import('./pages/tabs/tabs.page').then( m => m.TabsPage)
-  }
-  
+    loadComponent: () => import('./pages/tabs/tabs.page').then(m => m.TabsPage),
+    children: [
+      { path: '', redirectTo: '/tabs/home', pathMatch: 'full' },
+      {
+        path: 'home',
+        loadComponent: () => import('./pages/tabs/home/home.page').then( m => m.HomePage)
+      },
+      {
+        path: 'explore',
+        loadComponent: () => import('./pages/tabs/explore/explore.page').then( m => m.ExplorePage)
+      },
+      {
+        path: 'chats',
+        loadComponent: () => import('./pages/tabs/chats/chats.page').then( m => m.ChatsPage)
+      },
+      {
+        path: 'account',
+        loadComponent: () => import('./pages/tabs/account/account.page').then( m => m.AccountPage)
+      } ],
+  },
+
+
 ];
