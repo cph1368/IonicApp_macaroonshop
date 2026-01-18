@@ -21,7 +21,7 @@ import { home,location,chatbox,person } from 'ionicons/icons';
   templateUrl: './tabs.page.html',
   styleUrls: ['./tabs.page.scss'],
   standalone: true,
-  imports: [IonButton, IonContent, IonHeader, IonIcon, IonTab, IonTabBar, IonTabButton, IonTabs, IonTitle, IonToolbar],
+  imports: [  IonIcon, IonTabBar, IonTabButton, IonTabs],
 })
 
   export class TabsPage {

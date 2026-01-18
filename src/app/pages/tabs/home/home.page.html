@@ -21,5 +21,19 @@
       </ion-button>
 
     </ion-item>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-searchbar 
+        #searchInput
+        debounce="900"
+        color="light"
+        inputmode="search"
+        class="searchbar"
+        mode="ios" 
+        placeholder="Search your favourite macaroon"
+        routerLink="/tabs/search" ></ion-searchbar>
+      </ion-col>
+    </ion-row>
   </ion-toolbar>
 </ion-header>

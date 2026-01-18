@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonItem, IonLabel, IonButton, IonIcon, IonText } from '@ionic/angular/standalone';
+import { IonContent, IonHeader, IonTitle, IonToolbar, IonItem, IonLabel, IonButton, IonIcon, IonText, IonRow, IonCol, IonSearchbar } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { cart,chevronDownOutline, notificationsOutline } from 'ionicons/icons';
 
@@ -10,7 +10,7 @@ import { cart,chevronDownOutline, notificationsOutline } from 'ionicons/icons';
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonItem, IonLabel, IonButton, IonIcon, IonText]
+  imports: [ IonHeader, IonToolbar, CommonModule, FormsModule, IonItem, IonLabel, IonButton, IonIcon, IonText, IonRow, IonCol, IonSearchbar]
 })
 export class HomePage implements OnInit {
 
