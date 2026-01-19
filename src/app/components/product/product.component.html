@@ -1,3 +1,7 @@
-<p>
-  product works!
-</p>
+@defer(when item !==null) {
+ <ion-card>
+  <ion-thumbnail>
+    <ion-img [src]="item()?.image || 'assets/products/chocolate-cake.jpg'"></ion-img>
+  </ion-thumbnail>
+ </ion-card>
+}
