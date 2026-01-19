@@ -58,5 +58,6 @@
     @if(products().length > 0) {
       <app-list-heading title="Featured Products"></app-list-heading>
     }
+     <app-product-list-horizontal [products]="products()"></app-product-list-horizontal>
   </div>
 </ion-content>
