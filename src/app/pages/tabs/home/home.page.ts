@@ -12,13 +12,14 @@ import { ProductService } from 'src/services/product/product.service';
 import { Product } from 'src/app/interfaces/product.interface';
 import { BannerService } from 'src/services/banner/banner.service';
 import { Banner } from 'src/app/interfaces/banner.interface';
+import { CategoriesComponent } from "src/app/components/categories/categories.component";
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
   standalone: true,
-  imports: [ListHeadingComponent, IonHeader, IonToolbar, CommonModule, FormsModule, IonItem, IonLabel, IonButton, IonIcon, IonText, IonRow, IonCol, IonSearchbar, BannerComponent, IonContent]
+  imports: [ListHeadingComponent, IonHeader, IonToolbar, CommonModule, FormsModule, IonItem, IonLabel, IonButton, IonIcon, IonText, IonRow, IonCol, IonSearchbar, BannerComponent, IonContent, CategoriesComponent]
 })
 export class HomePage implements OnInit {
   
