@@ -3,5 +3,24 @@
   <ion-thumbnail>
     <ion-img [src]="item()?.image || 'assets/products/chocolate-cake.jpg'"></ion-img>
   </ion-thumbnail>
+
+  <ion-item lines="none">
+    <ion-label>
+      <ion-text color="dark">
+        <strong>{{item()?.name}}</strong>
+      </ion-text>
+
+        <p>      
+        <ion-text color="dark">
+          {{currency}}<strong> {{ item()?.default_price }}</strong>
+        </ion-text>
+    
+         <del class="small">   {{currency}} {{item()?.cut_price}}</del>
+      </p>
+    </ion-label>
+    <app-veg-nonveg-indicator slot="end" class="indicator"
+     [type]="item()?.type!"></app-veg-nonveg-indicator>
+  </ion-item>
+
  </ion-card>
 }

@@ -1,0 +1,37 @@
+
+ion-card {
+    height: 12rem;
+    margin: 0.2rem 0.1rem;
+    border-radius: 8px;
+    ion-thumbnail {
+        height: 6rem;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    ion-img {
+        height: 100px;
+        border-radius: 8px 8px 0 0;
+    }
+
+    ion-item{
+        --padding-start: 0.01rem;
+        --inner-padding-end: 1rem;
+        --min-height: auto;
+        ion-label {
+            margin-left: 0.3rem;
+            ion-text {
+                &.product-name {
+                    font-size: var(--font-size-medium);
+                    font-weight: 600;
+                }
+                &.product-price {
+                    font-size: var(--font-size-small);
+                    color: var(--ion-color-medium);
+                }
+            }
+        }
+    }
+
+
+}
