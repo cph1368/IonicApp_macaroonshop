@@ -19,15 +19,17 @@ ion-card {
         --inner-padding-end: 1rem;
         --min-height: auto;
         ion-label {
-            margin-left: 0.3rem;
+            margin-left: 1rem;
             ion-text {
+
+                 
                 &.product-name {
                     font-size: var(--font-size-medium);
                     font-weight: 600;
                 }
-                &.product-price {
-                    font-size: var(--font-size-small);
-                    color: var(--ion-color-medium);
+                &.product-pricing {
+                    font-size: 17px;
+                    //color: var(--ion-color-medium);
                 }
             }
         }

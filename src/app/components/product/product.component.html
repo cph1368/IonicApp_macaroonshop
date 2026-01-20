@@ -11,11 +11,11 @@
       </ion-text>
 
         <p>      
-        <ion-text color="dark">
-          {{currency}}<strong> {{ item()?.default_price }}</strong>
+        <ion-text color="dark" class="product-pricing">
+          <strong>{{currency}}{{ item()?.default_price }}  </strong>
         </ion-text>
     
-         <del class="small">   {{currency}} {{item()?.cut_price}}</del>
+         <del class="small ">   {{currency}}{{item()?.cut_price}}</del>
       </p>
     </ion-label>
     <app-veg-nonveg-indicator slot="end" class="indicator"
